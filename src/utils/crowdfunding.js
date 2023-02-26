@@ -1,6 +1,4 @@
 import algosdk from "algosdk";
-import { Buffer } from "buffer";
-window.Buffer = window.Buffer || Buffer;
 import {
     algodClient,
     crowdfundingAppNote,
@@ -49,7 +47,7 @@ const compileProgram = async (programSource) => {
     let encoder = new TextEncoder();
     let programBytes = encoder.encode(programSource);
     let compileResponse = await algodClient.compile(programBytes).do();
-    return new Uint8Array(Buffer.from(compileResponse.result, "base64"));
+    return new Uint8Array(compileResponse.result, "base64");
 }
 
 let compiledApprovalProgram;
