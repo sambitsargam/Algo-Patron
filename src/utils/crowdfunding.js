@@ -1,5 +1,6 @@
 import algosdk from "algosdk";
 import { Buffer } from "buffer";
+window.Buffer = window.Buffer || Buffer;
 import {
     algodClient,
     crowdfundingAppNote,
