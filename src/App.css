@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.font-title {
+  font-family: 'Marck Script', cursive;
+  font-size: 60px;
+}
+
+.accordion-button {
+  background-color: #263238 !important;
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+}
