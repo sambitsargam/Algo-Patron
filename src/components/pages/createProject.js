@@ -96,7 +96,7 @@ const CreateProjectForm = ({createProject}) => {
         className="text-light"
         type="switch"
         id="custom-switch"
-        label="Yes, I want AlgoPatron to publicize my project. I consent to paying a 3% fee when creating the project."
+        label="Yes, I want premium subscription to publicize my project. I consent to paying a 3% fee when creating the project."
         onClick={toggleSponsor}
         />
 

@@ -1,10 +1,10 @@
 from algosdk.kmd import KMDClient
 
 KMD_ADDRESS = "http://localhost:4002"
-KMD_TOKEN = "IXDCF6R7VC3H2D33B4O5R5VE6RQWCZFQ42KBK4V6EFPZMRPUOGSLP4F3VU"
+KMD_TOKEN = "your-address-here"
 
-KMD_WALLET_NAME = "unencrypted-default-wallet"
-KMD_WALLET_PASSWORD = "Sambit@0675"
+KMD_WALLET_NAME = "encrypted-default-wallet"
+KMD_WALLET_PASSWORD = "your-password-here"
 
 class Account:
     def __init__(self, private_key, address):

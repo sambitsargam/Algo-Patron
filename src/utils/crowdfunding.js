@@ -1,4 +1,5 @@
 import algosdk from "algosdk";
+import { Buffer } from "buffer";
 import {
     algodClient,
     crowdfundingAppNote,
@@ -17,7 +18,8 @@ import {
     platformAddr
 } from "./constants";
 
-const raw = require("raw.macro");
+import raw from "raw.macro";
+
 //const markdown = raw("./README.md");
 
 const approvalProgram = raw("../contracts/teal/crowdfunding_approval.teal");
@@ -47,7 +49,7 @@ const compileProgram = async (programSource) => {
     let encoder = new TextEncoder();
     let programBytes = encoder.encode(programSource);
     let compileResponse = await algodClient.compile(programBytes).do();
-    return new Uint8Array(compileResponse.result, "base64");
+    return new Uint8Array(Buffer.from(compileResponse.result, "base64"));
 }
 
 let compiledApprovalProgram;

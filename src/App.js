@@ -90,7 +90,7 @@ const App = function AppWrapper() {
                 </div>
             ) : (
                 <div>
-                <LandingPage name={"AlgoPatron"} mainImg={coverImg} connect={connectWallet}/>
+                <LandingPage name={"CrazyFunding"} mainImg={coverImg} connect={connectWallet}/>
                 </div>
             )}
             </HashRouter>

@@ -19,7 +19,7 @@ const LandingPage = ({name, mainImg, connect}) => {
                     <img src={mainImg} alt=""/>
                 </div>
                 <h1 className='font-title'>{name}</h1>
-                <h4 style={{fontSize: "18px"}}>Fund your crazy idea!</h4>
+                <h4 style={{fontSize: "18px"}}>Fund with your ideas!</h4>
                 <p className='pt-3 mb-2 text-muted' style={{fontSize: "14px"}}>Please connect your wallet to continue.</p>
                 <div className='d-flex justify-content-center'>
                 <Button
@@ -38,7 +38,7 @@ const LandingPage = ({name, mainImg, connect}) => {
                 </Button>
                 </div>
             </div>
-            <p className="mt-auto text-danger"><small>Powered by Algorand</small></p>
+            <p className="mt-auto text-danger"><small>Build on OPL HACKAONE HACKATHON</small></p>
         </div>) : (
             <div style={{backgroundColor: "#263238"}}>
                 <Nav className="justify-content-end pt-3 pb-0 pe-5" style={{position: 'flex'}}>

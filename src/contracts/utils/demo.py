@@ -14,7 +14,7 @@ from .crowdfund_contract import FundingProject
 
 ACCOUNT_NAMES = ['platform', 'creator', 'doner']
 ALGOD_ADDRESS = "http://localhost:4001"
-ALGOD_TOKEN = "IXDCF6R7VC3H2D33B4O5R5VE6RQWCZFQ42KBK4V6EFPZMRPUOGSLP4F3VU"
+ALGOD_TOKEN = "your-address-here"
 
 CROWDFUND_CONTRACT = FundingProject()
 ESCROW_ACCOUNT = EscrowAccount()
